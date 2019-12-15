@@ -278,6 +278,125 @@ Show
 	PlayEffect Red
 	MinimapIcon 0 Red Diamond
 
+
+#===============================================================================================================
+# [[9902]] CONQUEROR OF THE ATLAS INFLUENCE TYPES
+#===============================================================================================================
+
+#------------------------------------
+#   [9903] Temporary Tiering - T1
+#------------------------------------
+
+Show # %SENDER->INFTEMP->T1 $tier->t1 $type->rare->newinfluences
+	HasInfluence Crusader Redeemer Hunter Warlord
+	ItemLevel >= 85
+	Rarity <= Rare
+	BaseType "Diamond Ring" "Onyx Amulet" "Two-Stone Ring" "Colossal Tower Shield" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Vaal Regalia" "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Gold Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring" "Ambusher" "Archon Kite Shield" "Assassin's Garb" "Astral Plate" "Coronal Maul" "Deicide Mask" "Demon Dagger" "Exquisite Blade" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Harbinger Bow" "Harmonic Spirit Shield" "Harpy Rapier" "Heavy Belt" "Imbued Wand" "Jewelled Foil" "Kris" "Pinnacle Tower Shield" "Profane Wand" "Royal Burgonet" "Sadist Garb" "Saintly Chainmail" "Sambar Sceptre" "Siege Axe" "Skean" "Slink Boots" "Slink Gloves" "Spine Bow" "Spiraled Foil" "Titan Gauntlets" "Titan Greaves" "Vaal Axe" "Void Sceptre"
+	SetFontSize 45
+	SetTextColor 50 130 165 255             # TEXTCOLOR:	 ShaperElder
+	SetBorderColor 50 130 165 255           # BORDERCOLOR:	 Shaper T1
+	SetBackgroundColor 255 255 255 255      # BACKGROUND:	 T0 Drop
+	PlayAlertSound 1 300                    # DROPSOUND:	 T0 Drop
+	PlayEffect Red
+	MinimapIcon 0 Red Diamond
+
+Show # $tier->t1c $type->rare->newinfluences
+	HasInfluence Crusader Redeemer Hunter Warlord
+	ItemLevel >= 86
+	Rarity <= Rare
+	Class "Rings" "Amulets" "Jewel" "Belts" "Flask"
+	SetFontSize 45
+	SetTextColor 50 130 165 255             # TEXTCOLOR:	 ShaperElder
+	SetBorderColor 50 130 165 255           # BORDERCOLOR:	 Shaper T1
+	SetBackgroundColor 255 255 255 255      # BACKGROUND:	 T0 Drop
+	PlayAlertSound 1 300                    # DROPSOUND:	 T0 Drop
+	PlayEffect Red
+	MinimapIcon 0 Red Diamond
+
+#------------------------------------
+#   [9904] Temporary Tiering - T2
+#------------------------------------
+
+Show # $tier->t2c3 $type->rare->newinfluences
+	HasInfluence Crusader Redeemer Hunter Warlord
+	ItemLevel >= 80
+	DropLevel >= 65
+	Rarity <= Rare
+	SetFontSize 45
+	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
+	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
+	SetBackgroundColor 20 110 220           # BACKGROUND:	 ShaperElder T2
+	PlayAlertSound 3 300                    # DROPSOUND:	 Unique
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Diamond
+
+Show # %RECEIVER->INFTEMP->T1 $tier->t2 $type->rare->newinfluences
+	HasInfluence Crusader Redeemer Hunter Warlord
+	ItemLevel >= 80
+	Rarity <= Rare
+	BaseType "Agate Amulet" "Amber Amulet" "Ambusher" "Archon Kite Shield" "Assassin's Garb" "Astral Plate" "Citrine Amulet" "Colossal Tower Shield" "Coral Ring" "Coronal Maul" "Deicide Mask" "Demon Dagger" "Diamond Ring" "Eternal Burgonet" "Exquisite Blade" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Gold Ring" "Harbinger Bow" "Harmonic Spirit Shield" "Harpy Rapier" "Heavy Belt" "Hubris Circlet" "Imbued Wand" "Jade Amulet" "Jewelled Foil" "Kris" "Lapis Amulet" "Leather Belt" "Lion Pelt" "Moonstone Ring" "Onyx Amulet" "Pinnacle Tower Shield" "Prismatic" "Profane Wand" "Royal Burgonet" "Ruby Ring" "Rustic Sash" "Sadist Garb" "Saintly Chainmail" "Sambar Sceptre" "Sapphire Ring" "Siege Axe" "Skean" "Slink Boots" "Slink Gloves" "Sorcerer Boots" "Sorcerer Gloves" "Spine Bow" "Spiraled Foil" "Titan Gauntlets" "Titan Greaves" "Titanium Spirit Shield" "Topaz Ring" "Turquoise Amulet" "Two-Stone Ring" "Unset Ring" "Vaal Axe" "Vaal Regalia" "Void Sceptre"
+	SetFontSize 45
+	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
+	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
+	SetBackgroundColor 20 110 220           # BACKGROUND:	 ShaperElder T2
+	PlayAlertSound 3 300                    # DROPSOUND:	 Unique
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Diamond
+
+Show # $tier->t2c $type->rare->newinfluences
+	HasInfluence Crusader Redeemer Hunter Warlord
+	ItemLevel >= 84
+	Rarity <= Rare
+	Class "Belts" "Boots" "Gloves" "Helmets" "Rings" "Amulets" "Jewel" "Flask"
+	SetFontSize 45
+	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
+	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
+	SetBackgroundColor 20 110 220           # BACKGROUND:	 ShaperElder T2
+	PlayAlertSound 3 300                    # DROPSOUND:	 Unique
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Diamond
+
+Show # $tier->t2cc $type->rare->newinfluences
+	HasInfluence Crusader Redeemer Hunter Warlord
+	ItemLevel >= 80
+	Rarity <= Rare
+	Class "Rings" "Amulets" "Jewel" "Belts" "Flask"
+	SetFontSize 45
+	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
+	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
+	SetBackgroundColor 20 110 220           # BACKGROUND:	 ShaperElder T2
+	PlayAlertSound 3 300                    # DROPSOUND:	 Unique
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Diamond
+
+#------------------------------------
+#   [9905] Temporary Tiering - T3
+#------------------------------------
+
+Show # $tier->rest-trinkets $type->rare->newinfluences
+	HasInfluence Crusader Redeemer Hunter Warlord
+	Rarity <= Rare
+	Class "Amulet" "Belts" "Ring"
+	SetFontSize 45
+	SetBorderColor 25 235 25 255            # BORDERCOLOR:	 Shaper Elder Ring
+	SetBackgroundColor 50 130 165           # BACKGROUND:	 Shaper T3
+	PlayAlertSound 3 300                    # DROPSOUND:	 Unique
+	PlayEffect White
+	MinimapIcon 1 White Diamond
+
+Show # $tier->rest $type->rare->newinfluences
+	HasInfluence Crusader Redeemer Hunter Warlord
+	Rarity <= Rare
+	SetFontSize 45
+	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
+	SetBackgroundColor 50 130 165           # BACKGROUND:	 Shaper T3
+	PlayAlertSound 3 300                    # DROPSOUND:	 Unique
+	PlayEffect White
+	MinimapIcon 1 White Diamond
+
+
+
+
 #===============================================================================================================
 # [[0300]] SHAPER ITEMS
 #===============================================================================================================
@@ -287,7 +406,7 @@ Show
 #------------------------------------
 
 Show # $tier->t1ex $type->rare->shaper
-ShaperItem True
+HasInfluence Shaper
 ItemLevel >= 80
 Rarity <= Rare
 BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring"
@@ -300,7 +419,7 @@ PlayEffect Red
 MinimapIcon 0 Red Diamond
 
 Show # $tier->t1ex $type->rare->shaper
-ShaperItem True
+HasInfluence Shaper
 Rarity <= Rare
 BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring"
 SetFontSize 45
@@ -316,7 +435,7 @@ MinimapIcon 0 Yellow Diamond
 #------------------------------------
 
 Show # $tier->t1-1 $type->rare->shaper
-ShaperItem True
+HasInfluence Shaper
 ItemLevel >= 82
 Rarity <= Rare
 BaseType "Crystal Belt" "Fingerless Silk Gloves" "Imperial Bow" "Leather Belt" "Opal Ring" "Prismatic Ring" "Steel Ring" "Vaal Mask"
@@ -329,7 +448,7 @@ PlayEffect Red
 MinimapIcon 0 Red Diamond
 
 Show # $tier->t1-2 $type->rare->shaper
-ShaperItem True
+HasInfluence Shaper
 ItemLevel >= 84
 Rarity <= Rare
 BaseType "Agate Amulet" "Boot Knife" "Citrine Amulet" "Diamond Ring" "Hubris Circlet" "Onyx Amulet" "Quartz Sceptre" "Titanium Spirit Shield" "Turquoise Amulet" "Two-Toned Boots"
@@ -342,7 +461,7 @@ PlayEffect Red
 MinimapIcon 0 Red Diamond
 
 Show # $tier->t1-3 $type->rare->shaper
-ShaperItem True
+HasInfluence Shaper
 ItemLevel >= 86
 Rarity <= Rare
 BaseType "Amber Amulet" "Convoking Wand" "Coral Amulet" "Coronal Maul" "Eclipse Staff" "Gold Amulet" "Imperial Claw" "Jade Amulet" "Jewelled Foil" "Lapis Amulet" "Opal Sceptre" "Opal Wand" "Pagan Wand" "Paua Amulet" "Profane Wand" "Prophecy Wand" "Solar Maul" "Sorcerer Boots" "Thicket Bow" "Tornado Wand" "Two-Stone Ring" "Vaal Regalia" "Vanguard Belt" "Void Sceptre"
@@ -359,7 +478,7 @@ MinimapIcon 0 Red Diamond
 #------------------------------------
 
 Show # $tier->t2-1 $type->rare->shaper
-ShaperItem True
+HasInfluence Shaper
 ItemLevel >= 80
 Rarity <= Rare
 BaseType "Agate Amulet" "Amber Amulet" "Boot Knife" "Citrine Amulet" "Coral Ring" "Coronal Maul" "Diamond Ring" "Eclipse Staff" "Imperial Bow" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Onyx Amulet" "Pagan Wand" "Prismatic Ring" "Quartz Sceptre" "Ruby Ring" "Sapphire Ring" "Titanium Spirit Shield" "Topaz Ring" "Turquoise Amulet" "Two-Stone Ring" "Two-Toned Boots" "Vaal Mask"
@@ -372,7 +491,7 @@ PlayEffect Yellow
 MinimapIcon 0 Yellow Diamond
 
 Show # $tier->t2-2 $type->rare->shaper
-ShaperItem True
+HasInfluence Shaper
 ItemLevel >= 85
 Rarity <= Rare
 BaseType "Ambusher" "Archon Kite Shield" "Astral Plate" "Colossal Tower Shield" "Convoking Wand" "Copper Kris" "Coral Amulet" "Crusader Buckler" "Crystal Wand" "Death Bow" "Deicide Mask" "Demon's Horn" "Dragon Mace" "Engraved Wand" "Exquisite Blade" "Ezomyte Tower Shield" "Faun's Horn" "Gold Amulet" "Golden Kris" "Harbinger Bow" "Heathen Wand" "Horned Sceptre" "Hubris Circlet" "Imbued Wand" "Imp Dagger" "Imperial Buckler" "Imperial Claw" "Imperial Skean" "Iron Ring" "Ivory Spirit Shield" "Jewelled Foil" "Lacquered Buckler" "Lion Pelt" "Maelstr" "Ochre Sceptre" "Opal Sceptre" "Opal Wand" "Paua Amulet" "Platinum Kris" "Profane Wand" "Prophecy Wand" "Quartz Wand" "Ritual Sceptre" "Royal Bow" "Royal Burgonet" "Sage Wand" "Silken Hood" "Skean" "Slink Boots" "Slink Gloves" "Solar Maul" "Sorcerer Boots" "Sorcerer Gloves" "Spike-Point Arrow Quiver" "Spiraled Wand" "Thicket Bow" "Tornado Wand" "Unset Ring" "Vaal Regalia" "Vanguard Belt" "Void Sceptre"
@@ -389,7 +508,7 @@ MinimapIcon 0 Yellow Diamond
 #------------------------------------
 
 Show # $tier->t1c $type->rare->shaper
-	ShaperItem True
+	HasInfluence Shaper
 	ItemLevel >= 85
 	Rarity <= Rare
 	Class "Amulets"
@@ -406,7 +525,7 @@ Show # $tier->t1c $type->rare->shaper
 #------------------------------------
 
 Show # $tier->t2c $type->rare->shaper
-	ShaperItem True
+	HasInfluence Shaper
 	ItemLevel >= 86
 	Rarity <= Rare
 	Class "Belts" "Boots" "Gloves" "Helmets" "Quivers" "Rings" "Rune Daggers" "Sceptres"
@@ -423,7 +542,7 @@ Show # $tier->t2c $type->rare->shaper
 #------------------------------------
 
 Show # $tier->rest-trinkets $type->rare->shaper
-	ShaperItem True
+	HasInfluence Shaper
 	Rarity <= Rare
 	Class "Amulet" "Belts" "Ring"
 	SetFontSize 45
@@ -431,7 +550,7 @@ Show # $tier->rest-trinkets $type->rare->shaper
 	SetBackgroundColor 50 130 165           # BACKGROUND:	 Shaper T3
 
 Show # %H4 $tier->rest $type->rare->shaper
-	ShaperItem True
+	HasInfluence Shaper
 	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -446,7 +565,7 @@ Show # %H4 $tier->rest $type->rare->shaper
 #------------------------------------
 
 Show # $tier->t1ex $type->rare->elder
-ElderItem True
+HasInfluence Elder
 ItemLevel >= 80
 Rarity <= Rare
 BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring"
@@ -459,7 +578,7 @@ PlayEffect Red
 MinimapIcon 0 Red Diamond
 
 Show # $tier->t1ex $type->rare->elder
-ElderItem True
+HasInfluence Elder
 Rarity <= Rare
 BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Opal Ring" "Spiked Gloves" "Steel Ring" "Stygian Vise" "Two-Toned Boots" "Vermillion Ring"
 SetFontSize 45
@@ -475,7 +594,7 @@ MinimapIcon 0 Yellow Diamond
 #------------------------------------
 
 Show # $tier->t1-1 $type->rare->elder
-ElderItem True
+HasInfluence Elder
 ItemLevel >= 82
 Rarity <= Rare
 BaseType "Bone Helmet" "Crystal Belt" "Fingerless Silk Gloves" "Spiked Gloves"
@@ -488,7 +607,7 @@ PlayEffect Red
 MinimapIcon 0 Red Diamond
 
 Show # $tier->t1-2 $type->rare->elder
-ElderItem True
+HasInfluence Elder
 ItemLevel >= 84
 Rarity <= Rare
 BaseType "Agate Amulet" "Astral Plate" "Sage Wand" "Vanguard Belt"
@@ -501,7 +620,7 @@ PlayEffect Red
 MinimapIcon 0 Red Diamond
 
 Show # $tier->t1-3 $type->rare->elder
-ElderItem True
+HasInfluence Elder
 ItemLevel >= 86
 Rarity <= Rare
 BaseType "Convoking Wand" "Heavy Belt"
@@ -518,7 +637,7 @@ MinimapIcon 0 Red Diamond
 #------------------------------------
 
 Show # $tier->t2-1 $type->rare->elder
-ElderItem True
+HasInfluence Elder
 ItemLevel >= 80
 Rarity <= Rare
 BaseType "Agate Amulet" "Amber Amulet" "Astral Plate" "Bone Helmet" "Carved Wand" "Citrine Amulet" "Crystal Belt" "Fingerless Silk Gloves" "Heavy Belt" "Iron Gauntlets" "Jade Amulet" "Leather Belt" "Onyx Amulet" "Spiked Gloves" "Turquoise Amulet" "Two-Toned Boots"
@@ -531,7 +650,7 @@ PlayEffect Yellow
 MinimapIcon 0 Yellow Diamond
 
 Show # $tier->t2-2 $type->rare->elder
-ElderItem True
+HasInfluence Elder
 ItemLevel >= 85
 Rarity <= Rare
 BaseType "Archon Kite Shield" "Boot Blade" "Convoking Wand" "Coral Amulet" "Coral Ring" "Diamond Ring" "Dream Mace" "Driftwood Club" "Ebony Tower Shield" "Eternal Burgonet" "Exquisite Blade" "Ezomyte Tower Shield" "Gold Amulet" "Horned Sceptre" "Hubris Circlet" "Imp Dagger" "Imperial Claw" "Lapis Amulet" "Maelstr" "Murder Boots" "Paua Amulet" "Praetor Crown" "Quartz Wand" "Royal Burgonet" "Ruby Ring" "Sapphire Ring" "Serrated Arrow Quiver" "Skean" "Spiny Round Shield" "Titan Gauntlets" "Topaz Ring" "Two-Stone Ring" "Unset Ring" "Vaal Mask" "Vanguard Belt" "Zodiac Leather"
@@ -554,7 +673,7 @@ MinimapIcon 0 Yellow Diamond
 #------------------------------------
 
 Show # $tier->t2c $type->rare->elder
-	ElderItem True
+	HasInfluence Elder
 	ItemLevel >= 86
 	Rarity <= Rare
 	Class "Amulet" "Belts" "Boots" "Gloves" "Helmets" "Quiver" "Ring"
@@ -571,7 +690,7 @@ Show # $tier->t2c $type->rare->elder
 #------------------------------------
 
 Show # $tier->rest-trinkets $type->rare->elder
-	ElderItem True
+	HasInfluence Elder
 	Rarity <= Rare
 	Class "Amulet" "Belts" "Ring"
 	SetFontSize 45
@@ -579,7 +698,7 @@ Show # $tier->rest-trinkets $type->rare->elder
 	SetBackgroundColor 50 130 165           # BACKGROUND:	 Shaper T3
 
 Show # %H4 $tier->rest $type->rare->elder
-	ElderItem True
+	HasInfluence Elder
 	Rarity <= Rare
 	SetFontSize 45
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
