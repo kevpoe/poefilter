@@ -1,7 +1,7 @@
 #===============================================================================================================
 # NeverSink's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  7.4
+# VERSION:  7.5
 # TYPE:     2-SEMI-STRICT
 # STYLE:    NORMAL
 # AUTHOR:   NeverSink
@@ -284,7 +284,7 @@ Show
 #===============================================================================================================
 
 #------------------------------------
-#   [9903] Temporary Tiering - T1
+#   [9903] METAMORPH INFLUENCES - T1
 #------------------------------------
 
 Show # %SENDER->INFTEMP->T1 $tier->t1 $type->rare->newinfluences
@@ -314,7 +314,7 @@ Show # $tier->t1c $type->rare->newinfluences
 	MinimapIcon 0 Red Diamond
 
 #------------------------------------
-#   [9904] Temporary Tiering - T2
+#   [9904] METAMORPH INFLUENCES - T2
 #------------------------------------
 
 Show # $tier->t2c3 $type->rare->newinfluences
@@ -370,7 +370,7 @@ Show # $tier->t2cc $type->rare->newinfluences
 	MinimapIcon 0 Yellow Diamond
 
 #------------------------------------
-#   [9905] Temporary Tiering - T3
+#   [9905] METAMORPH INFLUENCES - T3
 #------------------------------------
 
 Show # $tier->rest-trinkets $type->rare->newinfluences
@@ -5582,7 +5582,7 @@ MinimapIcon 2 White Triangle
 
 Hide # %H3 %C3 $tier->t5 $type->divination
 Class "Divination"
-BaseType "A Mother's Parting Gift" "Anarchy's Price" "Audacity" "Birth of the Three" "Cartographer's Delight" "Dark Temptation" "Death" "Destined to Crumble" "Dying Anguish" "Lantador's Lost Love" "Light and Truth" "Lingering Remnants" "Might is Right" "Prosperity" "Rain Tempter" "Rats" "Struck by Lightning" "The Army of Blood" "The Blazing Fire" "The Carrion Crow" "The Coming Storm" "The Conduit" "The Deceiver" "The Endurance" "The Fathomless Depths" "The Hermit" "The Incantation" "The Inoculated" "The King's Blade" "The Lich" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Mountain" "The Oath" "The Opulent" "The Pack Leader" "The Rabid Rhoa" "The Ruthless Ceinture" "The Scarred Meadow" "The Sigil" "The Siren" "The Sun" "The Visionary" "The Warden" "The Watcher" "The Web" "The Witch" "Thunderous Skies" "Tranquillity" "Turn the Other Cheek" "Rain of Chaos" "The Arena Champion" "The Cursed King" "The Demoness" "The Doppelganger" "The Drunken Aristocrat" "The Feast" "The Formless Sea" "The Harvester" "The Lord in Black" "The One With All" "The Poet" "The Road to Power" "The Scholar" "The Spoiled Prince" "The Garish Power" "The Standoff" "The Forsaken" "The Mad King" "The Lord of Celebration" "The Golden Era" "Echoes of Love" "The Deep Ones" "The Fool" "The Archmage's Right Hand" "The Skeleton" "The Deal" "Forbidden Power" "The Surgeon" "The Sword King's Salute" "Doedre's Madness" "Grave Knowledge" "Shard of Fate" "The Battle Born" "The Dragon" "The Gentleman" "The Twins" "The Wolf's Shadow" "Volatile Power" "The Master Artisan" "Boon of Justice" "Thirst for Knowledge" "Vile Power" "The Calling" "Rain of Chaos" "The Scholar"
+BaseType "A Mother's Parting Gift" "Birth of the Three" "Cartographer's Delight" "Death" "Lantador's Lost Love" "Light and Truth" "Might is Right" "Prosperity" "Rain Tempter" "The Army of Blood" "The Carrion Crow" "The Deceiver" "The Incantation" "The King's Blade" "The Lich" "The Lover" "The Metalsmith's Gift" "The Opulent" "The Pack Leader" "The Scarred Meadow" "The Sigil" "The Siren" "The Sun" "The Warden" "Turn the Other Cheek" "Rain of Chaos" "The Demoness" "The Feast" "The Harvester" "The Lord in Black" "The Scholar" "The Spoiled Prince" "The Forsaken" "The Lord of Celebration" "The Golden Era" "Echoes of Love" "The Deep Ones" "The Archmage's Right Hand" "Forbidden Power" "Doedre's Madness" "The Dragon" "The Wolf's Shadow" "The Master Artisan" "The Calling" "Rain of Chaos" "The Scholar"
 SetFontSize 36
 SetTextColor 0 0 0 255                   # TEXTCOLOR:	 High Special Base
 SetBorderColor 0 0 0                     # BORDERCOLOR:	 Neutral T1.5
