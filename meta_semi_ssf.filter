@@ -280,11 +280,11 @@ Show
 
 
 #===============================================================================================================
-# [[9902]] CONQUEROR OF THE ATLAS INFLUENCE TYPES
+# [[9904]] CONQUEROR OF THE ATLAS INFLUENCE TYPES
 #===============================================================================================================
 
 #------------------------------------
-#   [9903] METAMORPH INFLUENCES - T1
+#   [9905] METAMORPH INFLUENCES - T1
 #------------------------------------
 
 Show # %SENDER->INFTEMP->T1 $tier->t1 $type->rare->newinfluences
@@ -314,7 +314,7 @@ Show # $tier->t1c $type->rare->newinfluences
 	MinimapIcon 0 Red Diamond
 
 #------------------------------------
-#   [9904] METAMORPH INFLUENCES - T2
+#   [9906] METAMORPH INFLUENCES - T2
 #------------------------------------
 
 Show # $tier->t2c3 $type->rare->newinfluences
@@ -370,7 +370,7 @@ Show # $tier->t2cc $type->rare->newinfluences
 	MinimapIcon 0 Yellow Diamond
 
 #------------------------------------
-#   [9905] METAMORPH INFLUENCES - T3
+#   [9907] METAMORPH INFLUENCES - T3
 #------------------------------------
 
 Show # $tier->rest-trinkets $type->rare->newinfluences
@@ -393,8 +393,6 @@ Show # $tier->rest $type->rare->newinfluences
 	PlayAlertSound 3 300                    # DROPSOUND:	 Unique
 	PlayEffect White
 	MinimapIcon 1 White Diamond
-
-
 
 
 #===============================================================================================================
@@ -2982,7 +2980,7 @@ SetBackgroundColor 170 225 70 255        # BACKGROUND:	 Trinket T1
 Show # %D4 %RECEIVER->CRAFTING->T3 $type->rarecraft->i86 $tier->t3
 ItemLevel >= 86
 Rarity Rare
-BaseType "Colossal Tower Shield" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Vaal Regalia"
+BaseType "Colossal Tower Shield" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Vaal Regalia" "Champion Kite Shield"
 SetFontSize 45
 SetTextColor 255 125 0 255
 SetBorderColor 255 125 0 255
@@ -3000,7 +2998,7 @@ SetBackgroundColor 170 225 70 255        # BACKGROUND:	 Trinket T1
 Show # %D4 %RECEIVER->CRAFTING->T4 $type->rarecraft->i86 $tier->t4
 ItemLevel >= 86
 Rarity Rare
-BaseType "Ambusher" "Archon Kite Shield" "Deicide Mask" "Demon Dagger" "Exquisite Blade" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Harbinger Bow" "Harmonic Spirit Shield" "Harpy Rapier" "Heavy Belt" "Imbued Wand" "Jewelled Foil" "Kris" "Profane Wand" "Royal Burgonet" "Sadist Garb" "Sambar Sceptre" "Siege Axe" "Slink Boots" "Slink Gloves" "Spine Bow" "Spiraled Foil" "Titan Gauntlets" "Titan Greaves" "Vaal Axe" "Void Sceptre" "Opal Sceptre" "Imperial Claw" "Champion Kite Shield"
+BaseType "Ambusher" "Archon Kite Shield" "Deicide Mask" "Demon Dagger" "Fossilised Spirit Shield" "Gemini Claw" "Harbinger Bow" "Harpy Rapier" "Imbued Wand" "Jewelled Foil" "Kris" "Profane Wand" "Royal Burgonet" "Sadist Garb" "Sambar Sceptre" "Slink Boots" "Slink Gloves" "Spiraled Foil" "Titan Gauntlets" "Titan Greaves" "Void Sceptre" "Opal Sceptre" "Imperial Claw" "Champion Kite Shield" "Siege Axe" "Imperial Bow"
 SetFontSize 40
 SetTextColor 255 125 0 255
 SetBorderColor 255 125 0 255
@@ -3048,7 +3046,7 @@ Show # %D2 %RECEIVER->CRAFTING->T3 $type->rarecraft->i84 $tier->t3
 ItemLevel <= 85
 ItemLevel >= 84
 Rarity Rare
-BaseType "Colossal Tower Shield" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Vaal Regalia"
+BaseType "Colossal Tower Shield" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Vaal Regalia" "Champion Kite Shield"
 SetFontSize 45
 SetTextColor 200 200 0 255
 SetBorderColor 200 200 0 255
@@ -3068,7 +3066,7 @@ Show # %D2 %RECEIVER->CRAFTING->T4 $type->rarecraft->i84 $tier->t4
 ItemLevel <= 86
 ItemLevel >= 84
 Rarity Rare
-BaseType "Ambusher" "Archon Kite Shield" "Deicide Mask" "Demon Dagger" "Exquisite Blade" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Harbinger Bow" "Harmonic Spirit Shield" "Harpy Rapier" "Heavy Belt" "Imbued Wand" "Jewelled Foil" "Kris" "Profane Wand" "Royal Burgonet" "Sadist Garb" "Sambar Sceptre" "Siege Axe" "Slink Boots" "Slink Gloves" "Spine Bow" "Spiraled Foil" "Titan Gauntlets" "Titan Greaves" "Vaal Axe" "Void Sceptre" "Opal Sceptre" "Imperial Claw" "Champion Kite Shield"
+BaseType "Ambusher" "Archon Kite Shield" "Deicide Mask" "Demon Dagger" "Fossilised Spirit Shield" "Gemini Claw" "Harbinger Bow" "Harpy Rapier" "Imbued Wand" "Jewelled Foil" "Kris" "Profane Wand" "Royal Burgonet" "Sadist Garb" "Sambar Sceptre" "Slink Boots" "Slink Gloves" "Spiraled Foil" "Titan Gauntlets" "Titan Greaves" "Void Sceptre" "Opal Sceptre" "Imperial Claw" "Champion Kite Shield" "Siege Axe" "Imperial Bow"
 SetFontSize 40
 SetTextColor 200 200 0 255
 SetBorderColor 200 200 0 255
@@ -3115,7 +3113,7 @@ SetBackgroundColor 170 225 70 255        # BACKGROUND:	 Trinket T1
 #	ItemLevel <= 83
 #	ItemLevel >= 65
 #	Rarity Rare
-#	BaseType "Colossal Tower Shield" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Vaal Regalia"
+#	BaseType "Colossal Tower Shield" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Vaal Regalia" "Champion Kite Shield"
 #	SetFontSize 45
 #	SetTextColor 255 255 119 255            # TEXTCOLOR:	 T2 Rare
 #	SetBorderColor 150 150 150              # BORDERCOLOR:	 Neutral T1
@@ -3135,7 +3133,7 @@ SetBackgroundColor 170 225 70 255        # BACKGROUND:	 Trinket T1
 #	ItemLevel <= 83
 #	ItemLevel >= 65
 #	Rarity Rare
-#	BaseType "Ambusher" "Archon Kite Shield" "Deicide Mask" "Demon Dagger" "Exquisite Blade" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Harbinger Bow" "Harmonic Spirit Shield" "Harpy Rapier" "Heavy Belt" "Imbued Wand" "Jewelled Foil" "Kris" "Profane Wand" "Royal Burgonet" "Sadist Garb" "Sambar Sceptre" "Siege Axe" "Slink Boots" "Slink Gloves" "Spine Bow" "Spiraled Foil" "Titan Gauntlets" "Titan Greaves" "Vaal Axe" "Void Sceptre" "Opal Sceptre" "Imperial Claw" "Champion Kite Shield"
+#	BaseType "Ambusher" "Archon Kite Shield" "Deicide Mask" "Demon Dagger" "Fossilised Spirit Shield" "Gemini Claw" "Harbinger Bow" "Harpy Rapier" "Imbued Wand" "Jewelled Foil" "Kris" "Profane Wand" "Royal Burgonet" "Sadist Garb" "Sambar Sceptre" "Slink Boots" "Slink Gloves" "Spiraled Foil" "Titan Gauntlets" "Titan Greaves" "Void Sceptre" "Opal Sceptre" "Imperial Claw" "Champion Kite Shield" "Siege Axe" "Imperial Bow"
 #	SetFontSize 40
 #	SetTextColor 255 255 119 255            # TEXTCOLOR:	 T2 Rare
 #	SetBorderColor 150 150 150              # BORDERCOLOR:	 Neutral T1
@@ -3149,7 +3147,7 @@ SetBackgroundColor 170 225 70 255        # BACKGROUND:	 Trinket T1
 #   [2101] Breach Rings Exceptions
 #------------------------------------
 
-Show # %H3 %C1
+Hide # %H3 %C1
 	ItemLevel >= 75
 	Rarity <= Rare
 	Class Rings
@@ -3159,7 +3157,7 @@ Show # %H3 %C1
 	SetBorderColor 130 25 255 255           # BORDERCOLOR:	 Breach
 	SetBackgroundColor 65 20 80             # BACKGROUND:	 Breach
 
-Show # %H3 %C1
+Hide # %H3 %C1
 	Rarity <= Rare
 	Class Rings
 	BaseType "Breach"
@@ -4045,21 +4043,21 @@ Show # %D2 %UP $size->small
 # 	SetBorderColor 0 0 0                  # BORDERCOLOR:	 Neutral T1.5
 # 	SetBackgroundColor 0 0 0 219          # BACKGROUND:	 Neutral T4
 
-#Show # %D1
-#	ItemLevel >= 75
-#	Rarity Rare
-#	Class "Shields"
-#	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
-#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+Show # %D1
+	ItemLevel >= 75
+	Rarity Rare
+	Class "Shields"
+	SetTextColor 255 190 0 255              # TEXTCOLOR:	 T3 Rare
+	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
-#Show # %D1 %UP
-#	ItemLevel >= 65
-#	Rarity Rare
-#	Class "Shields"
-#	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
-#	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
-#	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
+Show # %D1 %UP
+	ItemLevel >= 65
+	Rarity Rare
+	Class "Shields"
+	SetTextColor 220 220 119 220            # TEXTCOLOR:	 T3 Rare
+	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
+	SetBackgroundColor 0 0 0 150            # BACKGROUND:	 Neutral T6
 
 #------------------------------------
 #   [2220] OH: Quivers
@@ -5223,7 +5221,7 @@ MinimapIcon 2 White Circle
 #===============================================================================================================
 
 #------------------------------------
-#   [9905] Metamorph Items
+#   [9902] Metamorph Items
 #------------------------------------
 
 Show
@@ -5258,7 +5256,7 @@ Show
 	MinimapIcon 1 Green Hexagon
 
 #------------------------------------
-#   [9906] Metamorph Currency Catalysts
+#   [9903] Metamorph Currency Catalysts
 #------------------------------------
 
 Show
