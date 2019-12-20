@@ -6,6 +6,8 @@
 # STYLE:    NORMAL
 # AUTHOR:   NeverSink
 # BUILDNOTES: Filter generated with NeverSink's FilterpolishZ
+# Editor: Kev
+# Fork Version: 7.5.1
 #
 #------------------------------------
 # LINKS TO LATEST VERSION AND FILTER EDITOR
@@ -2385,7 +2387,7 @@ SetBackgroundColor 0 0 0 185
 Hide # %D3 %SENDER->CRAFTING->T4J $type->normalcraft->i86 $tier->t4j
 ItemLevel >= 86
 Rarity < Rare
-BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring"
+BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic Ring" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring"
 SetFontSize 40
 SetTextColor 255 255 255 185
 SetBorderColor 255 125 0 185
@@ -4997,7 +4999,7 @@ MinimapIcon 1 Yellow Circle
 
 Show # $tier->t22 $type->currency
 Class Currency
-BaseType "Ancient Shard" "Annulment Shard" "Simple Sextant" "Chaos Orb" "Engineer's Orb" "Gemcutter's Prism" "Harbinger's Shard" "Stacked Deck"
+BaseType "Ancient Shard" "Annulment Shard" "Simple Sextant" "Chaos Orb" "Engineer's Orb" "Gemcutter's Prism" "Harbinger's Shard" "Stacked Deck" "Prime Sextant"
 SetFontSize 45
 SetTextColor 0 0 0 255                   # TEXTCOLOR:	 High Special Base
 SetBorderColor 0 0 0 255                 # BORDERCOLOR:	 Neutral T1
@@ -5110,7 +5112,7 @@ MinimapIcon 0 Red Circle
 
 Show # $tier->t4 $type->currency->fossil
 Class Currency
-BaseType "Aberrant Fossil" "Dense Fossil" "Frigid Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Scorched Fossil"
+BaseType "Aberrant Fossil" "Frigid Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Scorched Fossil"
 SetFontSize 45
 SetTextColor 0 0 0 255                   # TEXTCOLOR:	 High Special Base
 SetBorderColor 0 0 0                     # BORDERCOLOR:	 Neutral T1.5
@@ -5136,7 +5138,7 @@ Show # $tier->rest $type->currency->fossil
 
 Show # $tier->t13 $type->currency
 	Class Currency
-	BaseType "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb"
+	BaseType "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb"
 	SetFontSize 45
 	SetTextColor 255 0 0 255                # TEXTCOLOR:	 T0 Item
 	SetBorderColor 255 0 0 255              # BORDERCOLOR:	 T0 Item
@@ -5259,23 +5261,15 @@ Show
 #   [9903] Metamorph Currency Catalysts
 #------------------------------------
 
-Show
-	BaseType "Ivory Watchstone"
+Show # $type->currency->catalyst $tier->t3
+	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Intrinsic Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst"
 	SetFontSize 45
-	SetTextColor 255 255 255
-	SetBackgroundColor 50 50 50
-	SetBorderColor 255 221 153
-	MinimapIcon 0 Yellow Square
-	PlayEffect Yellow
-
-Show
-	BaseType "Watchstone"
-	SetFontSize 45
-	SetTextColor 255 221 153
-	SetBackgroundColor 50 50 50
-	SetBorderColor 255 221 153
-	MinimapIcon 1 Yellow Square
-	PlayEffect Yellow
+	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
+	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
+	SetBackgroundColor 249 150 25 255       # BACKGROUND:	 Currency T3
+	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
+	PlayEffect White
+	MinimapIcon 2 White Circle
 
 
 #------------------------------------
@@ -5710,7 +5704,7 @@ Show # $tier->ex->harbinger $type->uniques $league->harbinger
 
 Show # $tier->t1 $type->uniques
 Rarity Unique
-BaseType "Ambush Mitts" "Blood Raiment" "Callous Mask" "Carnal Boots" "Crusader Boots" "Deerskin Gloves" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Greatwolf Talisman" "Jewelled Foil" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Ruby Flask" "Saint's Hauberk" "Siege Axe" "Silk Gloves" "Sorcerer Boots" "Timeless Jewel" "Wyrmscale Doublet" "Zodiac Leather"
+BaseType "Ambush Mitts" "Blood Raiment" "Callous Mask" "Carnal Boots" "Crusader Boots" "Deerskin Gloves" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Greatwolf Talisman" "Jewelled Foil" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Ruby Flask" "Saint's Hauberk" "Siege Axe" "Silk Gloves" "Sorcerer Boots" "Timeless Jewel" "Wyrmscale Doublet" "Zodiac Leather" "Ivory Watchstone"
 SetFontSize 45
 SetTextColor 175 96 37 255               # TEXTCOLOR:	 Unique
 SetBorderColor 175 96 37 255             # BORDERCOLOR:	 Aspect Unique
@@ -5725,7 +5719,7 @@ MinimapIcon 0 Red Star
 
 Show # $tier->t2 $type->uniques
 Rarity Unique
-BaseType "Arcanist Gloves" "Bismuth Flask" "Blunt Arrow Quiver Piece" "Champion Kite Shield" "Clasped Mitts" "Elegant Ringmail" "Iron Sceptre" "Nubuck Boots" "Nubuck Gloves" "Occultist's Vestment" "Rawhide Tower Shield" "Riveted Gloves" "Royal Axe" "Ruby Amulet" "Sanctified Life Flask" "Sapphire Flask" "Timeworn Claw" "Vaal Mask" "Vaal Rapier" "Ivory Watchstone"
+BaseType "Arcanist Gloves" "Bismuth Flask" "Blunt Arrow Quiver Piece" "Champion Kite Shield" "Clasped Mitts" "Elegant Ringmail" "Iron Sceptre" "Nubuck Boots" "Nubuck Gloves" "Occultist's Vestment" "Rawhide Tower Shield" "Riveted Gloves" "Royal Axe" "Ruby Amulet" "Sanctified Life Flask" "Sapphire Flask" "Timeworn Claw" "Vaal Mask" "Vaal Rapier"
 SetFontSize 45
 SetTextColor 0 0 0 255                   # TEXTCOLOR:	 High Special Base
 SetBorderColor 0 0 0 255                 # BORDERCOLOR:	 Neutral T1
