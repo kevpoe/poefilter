@@ -1,51 +1,34 @@
-#===============================================================================================================
-# NeverSink's Indepth Loot Filter - for Path of Exile
-#===============================================================================================================
-# VERSION:  7.5
-# TYPE:     2-SEMI-STRICT
+# ORIGINAL VERSION:  7.5.1
+# FORKED VERSION: 1.0.1
+# TYPE:     SEMI-STRICT
 # STYLE:    NORMAL
 # AUTHOR:   NeverSink
-# BUILDNOTES: Filter generated with NeverSink's FilterpolishZ
 # Editor: Kev
-# Fork Version: 7.5.1
 #
 #------------------------------------
 # LINKS TO LATEST VERSION AND FILTER EDITOR
 #------------------------------------
+# FilerBlast: https://filterblast.xyz/advanced/Template/s9oqdu
+# Origin version: https://github.com/NeverSinkDev/NeverSink-Filter
 #
-# EDIT/CUSTOMIZE FILTER ON: 	http://www.FilterBlade.xyz
-# GET THE LATEST VERSION ON: 	http://www.FilterBlade.xyz or https://github.com/NeverSinkDev/NeverSink-Filter
-# POE FORUM THREAD: 			https://goo.gl/oQn4EN
-#
-#------------------------------------
-# SUPPORT THE DEVELOPMENT:
-#------------------------------------
-#
-# SUPPORT ME ON PATREON: 		https://www.patreon.com/Neversink
-# SUPPORT THE FILTERBLADE TEAM: http://www.filterblade.xyz/About
-#
-#------------------------------------
-# INSTALLATION / UPDATE :
-#------------------------------------
-#
-# 0) It's recommended to check for updates once a month or at least before new leagues, to receive economy finetuning and new features!
-# 1) Paste this file into the following folder: %userprofile%/Documents/My Games/Path of Exile
-# 2) INGAME: Escape -> Options -> UI -> Scroll down -> Select the filter from the Dropdown box
-#
-#------------------------------------
-# CONTACT - if you want to get notifications about updates or just get in touch:
-#------------------------------------
-# PLEASE READ THE FAQ ON https://goo.gl/oQn4EN BEFORE ASKING QUESTIONS
-#
-# TWITTER: @NeverSinkGaming
-# REDDIT:  NeverSinkDev
-# GITHUB:  NeverSinkDev
-# EMAIL :  NeverSinkGaming-at-gmail.com
 
 #===============================================================================================================
 # [WELCOME] TABLE OF CONTENTS + QUICKJUMP TABLE
 #===============================================================================================================
 #
+
+# [[ADDITIONAL]] CUSTOMS
+#===============================================================================================================
+# [[7000]] Metamorph
+# 	[7010] Metamorph Items
+#	[7020] Metamorph Currency Catalysts
+# [[7100]] CONQUEROR OF THE ATLAS INFLUENCE TYPES
+#	[7110] METAMORPH INFLUENCES - T1
+#	[7120] METAMORPH INFLUENCES - T2
+#	[7130] METAMORPH INFLUENCES - T3
+
+#===============================================================================================================
+
 # [[0100]] OVERRIDE AREA 1 - Override ALL rules here
 # [[0200]] 6 LINKS
 # [[0300]] SHAPER ITEMS
@@ -246,7 +229,6 @@
 #   [4204] Vendor Magic items - Until 36
 # [[4300]] HIDE LAYER 5 - Remaining Items
 # [[4400]] CATCHALL - if you see pink items - update or revert your changes! This should not be happening!
-# [[4500]] Special thanks to!
 
 #===============================================================================================================
 # [[0100]] OVERRIDE AREA 1 - Override ALL rules here
@@ -282,18 +264,18 @@ Show
 
 
 #===============================================================================================================
-# [[9904]] CONQUEROR OF THE ATLAS INFLUENCE TYPES
+# [[7100]] CONQUEROR OF THE ATLAS INFLUENCE TYPES
 #===============================================================================================================
 
 #------------------------------------
-#   [9905] METAMORPH INFLUENCES - T1
+#   [7110] METAMORPH INFLUENCES - T1
 #------------------------------------
 
 Show # %SENDER->INFTEMP->T1 $tier->t1 $type->rare->newinfluences
 	HasInfluence Crusader Redeemer Hunter Warlord
 	ItemLevel >= 85
 	Rarity <= Rare
-	BaseType "Diamond Ring" "Onyx Amulet" "Two-Stone Ring" "Colossal Tower Shield" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Vaal Regalia" "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Gold Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring" "Ambusher" "Archon Kite Shield" "Assassin's Garb" "Astral Plate" "Coronal Maul" "Deicide Mask" "Demon Dagger" "Exquisite Blade" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Harbinger Bow" "Harmonic Spirit Shield" "Harpy Rapier" "Heavy Belt" "Imbued Wand" "Jewelled Foil" "Kris" "Pinnacle Tower Shield" "Profane Wand" "Royal Burgonet" "Sadist Garb" "Saintly Chainmail" "Sambar Sceptre" "Siege Axe" "Skean" "Slink Boots" "Slink Gloves" "Spine Bow" "Spiraled Foil" "Titan Gauntlets" "Titan Greaves" "Vaal Axe" "Void Sceptre"
+	BaseType "Diamond Ring" "Onyx Amulet" "Two-Stone Ring" "Colossal Tower Shield" "Eternal Burgonet" "Hubris Circlet" "Lion Pelt" "Sorcerer Boots" "Sorcerer Gloves" "Titanium Spirit Shield" "Vaal Regalia" "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Gold Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic Ring" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring" "Ambusher" "Archon Kite Shield" "Assassin's Garb" "Astral Plate" "Coronal Maul" "Deicide Mask" "Demon Dagger" "Exquisite Blade" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Harbinger Bow" "Harmonic Spirit Shield" "Harpy Rapier" "Heavy Belt" "Imbued Wand" "Jewelled Foil" "Kris" "Pinnacle Tower Shield" "Profane Wand" "Royal Burgonet" "Sadist Garb" "Saintly Chainmail" "Sambar Sceptre" "Siege Axe" "Skean" "Slink Boots" "Slink Gloves" "Spine Bow" "Spiraled Foil" "Titan Gauntlets" "Titan Greaves" "Vaal Axe" "Void Sceptre"
 	SetFontSize 45
 	SetTextColor 50 130 165 255             # TEXTCOLOR:	 ShaperElder
 	SetBorderColor 50 130 165 255           # BORDERCOLOR:	 Shaper T1
@@ -316,7 +298,7 @@ Show # $tier->t1c $type->rare->newinfluences
 	MinimapIcon 0 Red Diamond
 
 #------------------------------------
-#   [9906] METAMORPH INFLUENCES - T2
+#   [7120] METAMORPH INFLUENCES - T2
 #------------------------------------
 
 Show # $tier->t2c3 $type->rare->newinfluences
@@ -336,7 +318,7 @@ Show # %RECEIVER->INFTEMP->T1 $tier->t2 $type->rare->newinfluences
 	HasInfluence Crusader Redeemer Hunter Warlord
 	ItemLevel >= 80
 	Rarity <= Rare
-	BaseType "Agate Amulet" "Amber Amulet" "Ambusher" "Archon Kite Shield" "Assassin's Garb" "Astral Plate" "Citrine Amulet" "Colossal Tower Shield" "Coral Ring" "Coronal Maul" "Deicide Mask" "Demon Dagger" "Diamond Ring" "Eternal Burgonet" "Exquisite Blade" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Gold Ring" "Harbinger Bow" "Harmonic Spirit Shield" "Harpy Rapier" "Heavy Belt" "Hubris Circlet" "Imbued Wand" "Jade Amulet" "Jewelled Foil" "Kris" "Lapis Amulet" "Leather Belt" "Lion Pelt" "Moonstone Ring" "Onyx Amulet" "Pinnacle Tower Shield" "Prismatic" "Profane Wand" "Royal Burgonet" "Ruby Ring" "Rustic Sash" "Sadist Garb" "Saintly Chainmail" "Sambar Sceptre" "Sapphire Ring" "Siege Axe" "Skean" "Slink Boots" "Slink Gloves" "Sorcerer Boots" "Sorcerer Gloves" "Spine Bow" "Spiraled Foil" "Titan Gauntlets" "Titan Greaves" "Titanium Spirit Shield" "Topaz Ring" "Turquoise Amulet" "Two-Stone Ring" "Unset Ring" "Vaal Axe" "Vaal Regalia" "Void Sceptre"
+	BaseType "Agate Amulet" "Amber Amulet" "Ambusher" "Archon Kite Shield" "Assassin's Garb" "Astral Plate" "Citrine Amulet" "Colossal Tower Shield" "Coral Ring" "Coronal Maul" "Deicide Mask" "Demon Dagger" "Diamond Ring" "Eternal Burgonet" "Exquisite Blade" "Fleshripper" "Fossilised Spirit Shield" "Gemini Claw" "Gold Ring" "Harbinger Bow" "Harmonic Spirit Shield" "Harpy Rapier" "Heavy Belt" "Hubris Circlet" "Imbued Wand" "Jade Amulet" "Jewelled Foil" "Kris" "Lapis Amulet" "Leather Belt" "Lion Pelt" "Moonstone Ring" "Onyx Amulet" "Pinnacle Tower Shield" "Prismatic Ring" "Profane Wand" "Royal Burgonet" "Ruby Ring" "Rustic Sash" "Sadist Garb" "Saintly Chainmail" "Sambar Sceptre" "Sapphire Ring" "Siege Axe" "Skean" "Slink Boots" "Slink Gloves" "Sorcerer Boots" "Sorcerer Gloves" "Spine Bow" "Spiraled Foil" "Titan Gauntlets" "Titan Greaves" "Titanium Spirit Shield" "Topaz Ring" "Turquoise Amulet" "Two-Stone Ring" "Unset Ring" "Vaal Axe" "Vaal Regalia" "Void Sceptre"
 	SetFontSize 45
 	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
 	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
@@ -372,7 +354,7 @@ Show # $tier->t2cc $type->rare->newinfluences
 	MinimapIcon 0 Yellow Diamond
 
 #------------------------------------
-#   [9907] METAMORPH INFLUENCES - T3
+#   [7130] METAMORPH INFLUENCES - T3
 #------------------------------------
 
 Show # $tier->rest-trinkets $type->rare->newinfluences
@@ -2453,7 +2435,7 @@ SetBackgroundColor 0 0 0 185
 #	ItemLevel <= 85
 #	ItemLevel >= 84
 #	Rarity < Rare
-#	BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring"
+#	BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic Ring" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring"
 #	SetFontSize 40
 #	SetTextColor 255 255 255 185
 #	SetBorderColor 200 200 0 185
@@ -2520,7 +2502,7 @@ SetBackgroundColor 0 0 0 255
 #	ItemLevel <= 83
 #	ItemLevel >= 60
 #	Rarity < Rare
-#	BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring"
+#	BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic Ring" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring"
 #	SetFontSize 36
 #	SetTextColor 255 255 255 185
 #	SetBorderColor 0 0 0 185
@@ -2768,7 +2750,7 @@ Show # %D2
 #	ItemLevel >= 75
 #	Rarity Normal
 #	Class Amulet Belts Rings
-#	BaseType "Diamond" "Onyx" "Prismatic" "Two-Stone"
+#	BaseType "Diamond" "Onyx" "Prismatic Ring" "Two-Stone"
 #	SetFontSize 36
 #	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
 #	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
@@ -2788,7 +2770,7 @@ Show # %D2
 #	ItemLevel <= 74
 #	Rarity Normal
 #	Class Amulet Belts Rings
-#	BaseType "Diamond" "Onyx" "Prismatic" "Two-Stone"
+#	BaseType "Diamond" "Onyx" "Prismatic Ring" "Two-Stone"
 #	SetTextColor 200 200 200 210            # TEXTCOLOR:	 Neutral Priority
 #	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 #	SetBackgroundColor 0 0 0 185            # BACKGROUND:	 Neutral T3
@@ -2991,7 +2973,7 @@ SetBackgroundColor 0 75 30 255           # BACKGROUND:	 Rare T1
 Show # %D4 %RECEIVER->CRAFTING->T4J $type->rarecraft->i86 $tier->t4j
 ItemLevel >= 86
 Rarity Rare
-BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring"
+BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic Ring" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring"
 SetFontSize 40
 SetTextColor 255 125 0 255
 SetBorderColor 255 125 0 255
@@ -3058,7 +3040,7 @@ Show # %D2 %RECEIVER->CRAFTING->T4J $type->rarecraft->i84 $tier->t4j
 ItemLevel <= 85
 ItemLevel >= 84
 Rarity Rare
-BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring"
+BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic Ring" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring"
 SetFontSize 40
 SetTextColor 0 0 0 255
 SetBorderColor 200 200 0 255
@@ -3125,7 +3107,7 @@ SetBackgroundColor 170 225 70 255        # BACKGROUND:	 Trinket T1
 #	ItemLevel <= 83
 #	ItemLevel >= 65
 #	Rarity Rare
-#	BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring"
+#	BaseType "Agate Amulet" "Amber Amulet" "Citrine Amulet" "Coral Ring" "Jade Amulet" "Lapis Amulet" "Leather Belt" "Moonstone Ring" "Prismatic Ring" "Ruby Ring" "Rustic Sash" "Sapphire Ring" "Topaz Ring" "Turquoise Amulet" "Unset Ring"
 #	SetFontSize 40
 #	SetTextColor 255 255 119 255            # TEXTCOLOR:	 T2 Rare
 #	SetBorderColor 150 150 150              # BORDERCOLOR:	 Neutral T1
@@ -5219,11 +5201,11 @@ MinimapIcon 2 White Circle
 
 
 #===============================================================================================================
-# [[9901]] Metamorph
+# [[7000]] Metamorph
 #===============================================================================================================
 
 #------------------------------------
-#   [9902] Metamorph Items
+#   [7010] Metamorph Items
 #------------------------------------
 
 Show
@@ -5258,11 +5240,12 @@ Show
 	MinimapIcon 1 Green Hexagon
 
 #------------------------------------
-#   [9903] Metamorph Currency Catalysts
+#   [7020] Metamorph Currency Catalysts
 #------------------------------------
 
 Show # $type->currency->catalyst $tier->t3
 	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Intrinsic Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst"
+	Class "Stackable Currency"
 	SetFontSize 45
 	SetTextColor 0 0 0 255                  # TEXTCOLOR:	 High Special Base
 	SetBorderColor 0 0 0 255                # BORDERCOLOR:	 Neutral T1
@@ -7231,38 +7214,3 @@ Show # safetyline!
 	SetFontSize 45
 	SetTextColor 255 0 255 255              # TEXTCOLOR:	 Error
 	SetBorderColor 255 0 255 255            # BORDERCOLOR:	 Error
-
-#===============================================================================================================
-# [[4500]] Special thanks to!
-#===============================================================================================================
-#
-# SPECIAL THANKS:
-# Tobnac & Haggis - I'd need to a document to list everything they've done. Building www.FilterBlade.xyz together is just a single example.
-#
-# PATREON ( https://www.patreon.com/Neversink ):
-# Mike E., Justin F., Henry G., Aaron, Greg D., Reilly M., Jon P., Ryndaar, Matt O., Dmitry R, "Megatron", "The One Guy What's His Name Again?"
-# You guys are awesome, thanks!
-#
-# COMMUNITY & FRIENDS:
-# C4pture, MrPing, Mighty, Antnee, Ghudda, Malchron, ZiggyD, Zizaran, Helmannn, StarRune, TheZensei, Eruyome!
-#
-# Special thanks to the supporters, stream-viewers and my guild :)
-# Everyone who provided feedback on my thread/github and on reddit.
-#
-# GRINDING GEAR GAMES with a special thanks to: Bex, Chris, Jonathan 
-#
-# Script by NeverSinkher is just a single example.
-#
-# PATREON ( https://www.patreon.com/Neversink ):
-# Mike E., Justin F., Henry G., Aaron, Greg D., Reilly M., Jon P., Ryndaar, Matt O., Dmitry R, "Megatron", "The One Guy What's His Name Again?"
-# You guys are awesome, thanks!
-#
-# COMMUNITY & FRIENDS:
-# C4pture, MrPing, Mighty, Antnee, Ghudda, Malchron, ZiggyD, Zizaran, Helmannn, StarRune, TheZensei, Eruyome!
-#
-# Special thanks to the supporters, stream-viewers and my guild :)
-# Everyone who provided feedback on my thread/github and on reddit.
-#
-# GRINDING GEAR GAMES with a special thanks to: Bex, Chris, Jonathan 
-#
-# Script by NeverSink
