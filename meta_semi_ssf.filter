@@ -2468,9 +2468,9 @@ SetBackgroundColor 0 0 0 185
 # 	PlayEffect Yellow
 # 	MinimapIcon 2 Yellow Hexagon
 
-Hide # %D4 %RECEIVER->CRAFTING->T2 $type->normalcraft->rest $tier->t2
+Show # %D4 %RECEIVER->CRAFTING->T2 $type->normalcraft->rest $tier->t2
 ItemLevel <= 83
-ItemLevel >= 60
+ItemLevel >= 70
 Rarity < Rare
 BaseType "Blue Pearl Amulet" "Bone Helmet" "Cerulean Ring" "Convoking Wand" "Crystal Belt" "Fingerless Silk Gloves" "Gripped Gloves" "Marble Amulet" "Sacrificial Garb" "Spiked Gloves" "Stygian Vise" "Two-Toned Boots" "Vanguard Belt"
 SetFontSize 45
@@ -4355,13 +4355,13 @@ Show # %REMS1 $lvl
 # [[2700]] HIDE LAYER 3: Random Endgame Flasks
 #===============================================================================================================
 
-Hide 
-	ItemLevel >= 69
-	Rarity <= Magic
-	BaseType Flask
-	SetFontSize 18
-	SetBorderColor 0 0 0 150                # BORDERCOLOR:	 Neutral T3
-	SetBackgroundColor 0 0 0 165            # BACKGROUND:	 Neutral T5
+#Show 
+#	ItemLevel >= 69
+#	Rarity <= Magic
+#	BaseType Flask
+#	SetFontSize 18
+#	SetBorderColor 0 0 0 150                # BORDERCOLOR:	 Neutral T3
+#	SetBackgroundColor 0 0 0 165            # BACKGROUND:	 Neutral T5
 
 #===============================================================================================================
 # [[2800]] Maps, fragments and labyrinth items
@@ -5891,7 +5891,7 @@ Hide # lvl
 	Quality 0
 	ItemLevel >= 67
 	Class "Life Flask" "Mana Flask"
-	BaseType Divine Eternal Hallowed Sanctified
+	BaseType Eternal Hallowed Sanctified
 	SetFontSize 20
 	SetBorderColor 0 0 0                    # BORDERCOLOR:	 Neutral T1.5
 
